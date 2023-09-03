@@ -1,19 +1,14 @@
 from helper.utils import *
 
 
-def crop_youtube_videos(links, file_names, starts, ends):
+def main():
     """
     Download and crop YouTube videos based on provided information.
-
-    Args:
-        links (list): List of YouTube video links.
-        file_names (list): List of desired file names for the output videos.
-        starts (list): List of start times for cropping each video.
-        ends (list): List of end times for cropping each video.
 
     Returns:
         None
     """
+    links, file_names, starts, ends = read_videos_info()
     make_output_dir()
     for link, file_name, start, end in zip(links, file_names, starts, ends):
         try:
@@ -26,5 +21,4 @@ def crop_youtube_videos(links, file_names, starts, ends):
 
 
 if __name__ == "__main__":
-    links, names, strts, ends = read_videos_info()
-    crop_youtube_videos(links, names, strts, ends)
+    main()
