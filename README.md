@@ -1,6 +1,5 @@
 # Description
-If you want to download the cropped the youtube video, you can easily do.
-
+Download and cropped the youtube video easily using this repo.
 # Usage
 - If you have conda, just run following command to create conda virtual env as well install the requirements require to run the code.
     ```
