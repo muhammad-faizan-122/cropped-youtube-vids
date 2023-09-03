@@ -14,7 +14,7 @@ def crop_youtube_videos(links, file_names, starts, ends):
     Returns:
         None
     """
-
+    make_output_dir()
     for link, file_name, start, end in zip(links, file_names, starts, ends):
         try:
             print(f"{file_name} is processing...")

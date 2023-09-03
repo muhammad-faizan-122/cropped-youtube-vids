@@ -10,6 +10,18 @@ with open(youtube_config_path, "r") as file:
     yt_vid_consts = yaml.safe_load(file)
 
 
+def make_output_dir():
+    """
+    creating output directory which contains the output json file
+    """
+    folder_name = "./data/output"
+    if not os.path.exists(folder_name):
+        os.mkdir(folder_name)
+        print(f"Folder {folder_name} created")
+    else:
+        print(f"Folder {folder_name} already exist")
+
+
 def read_videos_info():
     """
     Read video information from a CSV file.
