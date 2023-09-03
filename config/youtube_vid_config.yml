@@ -1,0 +1,4 @@
+inp_csv_file: "data/input/youtube_vids_data.csv"
+output_cropped_vids: ./data/output
+resolution: '720p'
+bitrate: "8M"
